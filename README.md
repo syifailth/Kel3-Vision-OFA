@@ -11,6 +11,9 @@ Bertujuan untuk membantu penguji dalam memeriksa kecacatan produk coran sebelum 
 * Deteksi Objek
 * Klasifikasi Gambar
 
+### Tambahan
+untuk mendowload model bisa kunjungi link berikut [https://tinyurl.com/ProyekAkhir-OFA5] 
+
 ## Kelompok 3 - Vision
 * Aisyah Sekar Tri Wardani
 * Anisa Tulhalizah
