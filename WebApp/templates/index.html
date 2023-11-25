@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metal</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body id="Home">
+    <!-- NAVIGASI -->
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #30cfd0">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="{{ url_for('static', filename='images/Logo.png') }}" width="30" height="30" alt="logo">
+                <span class="navbar-brand mx-3 h1">Metal Factory</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active" aria-current="page" href="#Banner">Home</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#About">About</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#Service">Service</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#AI">AI Product</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#Team">Team</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVIGASI -->
+
+    <!-- HOME -->
+    <section id="Banner">
+        <div class="container banner-content">
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <h1 class="fw-bold">
+                        Manufacture Industry
+                    </h1>
+                    <p>
+                        Industri manufaktur merupakan kegiatan ekonomi yang dalam kegiatannya mengubah suatu barang
+                        dasar secara mekanis, kimia atau dengan tangan sehingga menjadi barang jadi atau setengah jadi
+                        dan atau barang yang kurang nilainya menjadi barang yang lebih tinggi nilainya, dan sifatnya
+                        lebih dekat kepada pemakai akhir
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <center><img src="{{ url_for('static', filename='images/Banner-content.png') }}" alt="Banner Content" width="300"></center>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- HOME -->
+
+    <!-- ABOUT -->
+    <section id="About">
+        <div class="container pt-4">
+            <div class="row align-items-center py-5">
+                <div class="col-md-6">
+                    <img src="{{ url_for('static', filename='images/About.jpg') }}" style="max-width: 100%" />
+                </div>
+                <div class="col-md-6 px-0 px-5">
+                    <h2 class="fw-bold py-3">Metal Manufacture</h2>
+                    <p>
+                        Salah satu industri manufaktur adalah industri logam. Proses pengecoran dilakukan dengan
+                        beberapa tahapan mulai dari pembuatan
+                        cetakan, proses peleburan, penuangan dan pembongkaran. Untuk menghasilkan coran
+                        yang baik maka semuanya harus direncanakan dan dilakukan dengan sebaik-baiknya.
+                        Namun hasil coran sering terjadi ketidak sempurnaan atau cacat. Cacat yang terjadi pada
+                        coran dipengaruhi oleh bebrapa factor yaitu desain pengecoran dan pola, pasir cetak dan desain
+                        cetakan dan inti, komposisi muatan logam, proses peleburan dan penuangan, sistem saluran masuk
+                        dan penambah.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT -->
+
+    <!-- SERVICE -->
+    <section id="Service">
+        <div class="container pt-4">
+            <div class="row align-items-center py-5">
+                <div class="col-md-6 px-0 px-5">
+                    <div class="row text-center">
+                        <h2 class="mb-5 fw-bold">Our Service</h2>
+                        <div class="col-md-6 mb-3">
+                            <div class="card mx-auto py-4 text-center card-service">
+                                <center><img src="{{ url_for('static', filename='images/Classification.svg') }}" class="card-img-top" alt="Klasifikasi" style="width: 50px;"></center>
+                                <div class="card-body px-5">
+                                    <h5 class="card-title">Object Classification</h5>
+                                    <p class="card-text">Mengklaisfikasikan jenis cacat coran kedalam 4 jenis yaitu
+                                        cacat
+                                        retak, cacat lubang, cacat las, dan cacat korosi</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="card mx-auto py-4 text-center card-service">
+                                <center><img src="{{ url_for('static', filename='images/Detection.svg') }}" class="card-img-top" alt="Klasifikasi" style="width: 50px;"></center>
+                                <div class="card-body px-5">
+                                    <h5 class="card-title">Object Detection</h5>
+                                    <p class="card-text">Mendeteksi object cacat pada produk coran</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="{{ url_for('static', filename='images/Service.jpg') }}" style="max-width: 100%" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SERVICE -->
+
+    <!-- OBJEK DETEKSI & KLASIFIKASI -->
+    <section id="AI">
+        <div class="container py-5">
+            <div class="row text-center">
+                <div class="col">
+                    <h2 class="fw-bold mt-4 text-white">Object Detection & Classification</h2>
+                </div>
+            </div>
+            <div class="card mt-4">
+                <div class="card-header">
+                    <ul class="nav nav-tabs nav-tabs-neutral justify-content-center" role="tablist" data-background-color="blue">
+                        <li class="nav-item">
+                            <a class="nav-link active text-dark fw-bold" data-toggle="tab" href="#classification" role="tab">Classification</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-bold" data-toggle="tab" href="#detection" role="tab">Detection</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body mb-4">
+                    <!-- Tab panes -->
+                    <div class="tab-content text-center">
+                        <div class="tab-pane active" id="classification" role="tabpanel">
+                            <div class="col-lg-6 col-md-6 col-sm-12 mx-auto">
+                                <div class="card-metal py-3">
+                                    <center><img src="{{ url_for('static', filename='images/User-Guide.svg') }}" class="card-img-top" alt="User Guide" style="width: 50px;"></center>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">User Guide</h5>
+                                        <ol style="font-size: smaller; text-align:left;">
+                                            <li>Klik tombol "Upload" untuk menginput data sesuai kebutuhan</li>
+                                            <li>Klik tombol "Submit" untuk melihat hasilnya</li>
+                                            <li>Pastikan Anda mengunggah gambar yang terkait dengan Metal Defects 
+                                            <strong>Cacat Korosi, Cacat Las, Cacat Lubang, dan Cacat Retak</strong></li>
+                                        </ol>
+                                    </div>
+                                    <form action=/prediction-classification  method="POST" enctype="multipart/form-data">
+                                        <div class="form-group d-flex justify-content-center" style="margin-top: -30px;">
+                                            <label>
+                                                <input type="file" name="file" id="file" style="display:none" accept="image/*" required>
+                                                <img class="image-upload" src="{{url_for('static', filename='images/upload.png')}}" width="60" height="60" alt="upload">
+                                            </label>
+                                        </div>
+                                        <div class="text-center mt-3 mb-3">
+                                            <input type="submit" class="btn btn-primary text-light" name="Submit" value="Submit" onclick="$('#loading-prediction').show();">
+                                        </div>
+                                        <div class="text-center">
+                                            <div id="loading-prediction" style="display:none;"><img src="{{ url_for('static', filename='images/loading.gif') }}" alt=""/></div>
+                                        </div>  
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="detection" role="tabpanel">
+                            <div class="col-lg-6 col-md-6 col-sm-12 mx-auto">
+                                <div class="card-metal py-3">
+                                    <center><img src="{{ url_for('static', filename='images/User-Guide.svg') }}" class="card-img-top" alt="User Guide" style="width: 50px;"></center>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">User Guide</h5>
+                                        <ol style="font-size: smaller; text-align:left;">
+                                            <li>Klik tombol "Upload" untuk menginput data sesuai kebutuhan</li>
+                                            <li>Klik tombol "Submit" untuk melihat hasilnya</li>
+                                            <li>Pastikan Anda mengunggah gambar yang terkait dengan Metal Quality 
+                                            <strong>Good Metal dan Bad Metal</strong></li>
+                                        </ol>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-lg-4 col-md-4 col-sm-12">
+                                            <form action=/detection-image  method="POST" enctype="multipart/form-data">
+                                                <div class="form-group d-flex justify-content-center" style="margin-top: -30px;">
+                                                    <label>
+                                                        <input type="file" name="file" id="file" style="display:none" accept="image/*" required>
+                                                        <img class="image-upload" src="{{url_for('static', filename='images/img.png')}}" width="60" height="60" alt="upload">
+                                                    </label>
+                                                </div>
+                                                <div class="text-center mt-3 mb-3">
+                                                    <input type="submit" class="btn btn-primary text-light" name="Submit" value="Submit" onclick="$('#loading-prediction-image').show();">
+                                                </div>
+                                                <div class="text-center">
+                                                    <div id="loading-prediction-image" style="display:none;"><img src="{{ url_for('static', filename='images/loading.gif') }}" alt=""/></div>
+                                                </div>  
+                                            </form>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-12">
+                                            <form action=/detection-video  method="POST" enctype="multipart/form-data">
+                                                <div class="form-group d-flex justify-content-center" style="margin-top: -30px;">
+                                                    <label>
+                                                        <input type="file" name="file" id="file" style="display:none" accept="image/*" required>
+                                                        <img class="image-upload" src="{{url_for('static', filename='images/video.png')}}" width="60" height="60" alt="upload">
+                                                    </label>
+                                                </div>
+                                                <div class="text-center mt-3 mb-3">
+                                                    <input type="submit" class="btn btn-primary text-light" name="Submit" value="Submit" onclick="$('#loading-prediction-video').show();">
+                                                </div>
+                                                <div class="text-center">
+                                                    <div id="loading-prediction-video" style="display:none;"><img src="{{ url_for('static', filename='images/loading.gif') }}" alt=""/></div>
+                                                </div>  
+                                            </form>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-12">
+                                            <div class="d-flex justify-content-center" style="margin-top: -30px;">
+                                                <img class="image-upload" src="{{url_for('static', filename='images/webcam.png')}}" width="60" height="60" alt="upload">
+                                            </div>
+                                            <div class="text-center mt-4 mb-3">
+                                                <a href="{{ url_for('webcam') }}" type="button" class="btn btn-primary text-light">Webcam</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Tabs on plain Card -->
+
+        </div>
+    </section>
+    <!-- OBJEK DETEKSI & KLASIFIKASI -->
+
+
+    <!-- TEAM -->
+    <section id="Team">
+        <div class="container py-5">
+            <div class="row text-center pt-3">
+                <div class="col">
+                    <h2 class="fw-bold">Our Team</h2>
+                </div>
+            </div>
+            <!-- ML: DETECTION -->
+            <div class="row align-items-center">
+                <div class="col-md-3 mt-5 px-5">
+                    <h4>Machine Learning : Object Detection</h4>
+                    <ol>
+                        <li>Data Accquisition</li>
+                        <li>Data Exploration</li>
+                        <li>Modeling</li>
+                        <li>Evaluation</li>
+                        <li>UI/UX</li>
+                    </ol>
+                </div>
+                <div class="col-md-3 mt-5 text-center">
+                    <div class="card p-3 mx-auto card-team">
+                        <img src="{{ url_for('static', filename='images/Anisa Tulhalizah.jpg') }}" class="card-img-top rounded-circle  mx-auto d-block"
+                            alt="Anisa Tulhalizah">
+                        <div class="card-body">
+                            <h5 class="card-title">Anisa Tulhalizah</h5>
+                            <p class="card-text">
+                                Universitas Sultan Ageng Tirtayasa<br>
+                                Pendidikan Pancasila dan Kewarganegaraan<br>
+                                2286210027<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-5 text-center">
+                    <div class="card p-3 mx-auto card-team">
+                        <img src="{{ url_for('static', filename='images/Nur Hidayatil Janah.jpg') }}" class="card-img-top rounded-circle  mx-auto d-block"
+                            alt="Nur Hidayatil Janah">
+                        <div class="card-body">
+                            <h5 class="card-title">Nur Hidayatil Janah</h5>
+                            <p class="card-text">
+                                Universitas Sultan Ageng Tirtayasa <br>
+                                Pendidikan Pancasila dan Kewarganegaraan <br>
+                                2286210049<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-5 text-center">
+                    <div class="card p-3 mx-auto card-team">
+                        <img src="{{ url_for('static', filename='images/Firdaus Albani Ar Rabi.jpg') }}"
+                            class="card-img-top rounded-circle  mx-auto d-block" alt="Firdaus Albani Ar Rabi">
+                        <div class="card-body">
+                            <h5 class="card-title">Firdaus Albani Ar Rabi</h5>
+                            <p class="card-text">
+                                Institut Teknologi Indonesia<br>
+                                Teknik Informatika<br>
+                                1152100026<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ML: CLASSIFICATION -->
+            <div class="row align-items-center">
+                <div class="col-md-3 mt-4 text-center">
+                    <div class="card p-3 mx-auto card-team">
+                        <img src="{{ url_for('static', filename='images/Aisyah Sekar Tri Wardani.jpg') }}"
+                            class="card-img-top rounded-circle  mx-auto d-block" alt="Aisyah Sekar Tri W">
+                        <div class="card-body">
+                            <h5 class="card-title">Aisyah Sekar Tri W</h5>
+                            <p class="card-text">
+                                Universitas Sultan Ageng Tirtayasa <br>
+                                Pendidikan Pancasila dan Kewarganegaraan <br>
+                                2286210029<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-4 text-center">
+                    <div class="card p-3 mx-auto card-team">
+                        <img src="{{ url_for('static', filename='images/Fauziah Wan.jpg') }}" class="card-img-top rounded-circle  mx-auto d-block"
+                            alt="Fauziah Wan">
+                        <div class="card-body">
+                            <h5 class="card-title">Fauziah Wan</h5>
+                            <p class="card-text">
+                                Universitas Terbuka<br>
+                                Pendidikan Guru Sekolah Dasar<br>
+                                856225634<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-4 text-center">
+                    <div class="card p-3 mx-auto card-team">
+                        <img src="{{ url_for('static', filename='images/Syifa Inas Luthfiya.jpg') }}" class="card-img-top rounded-circle  mx-auto d-block"
+                            alt="Syifa Inas Luthfiya">
+                        <div class="card-body">
+                            <h5 class="card-title">Syifa Inas Luthfiya</h5>
+                            <p class="card-text">
+                                Universitas Sultan Ageng Tirtayasa <br>
+                                Informatika<br>
+                                3337210004<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-4 px-5">
+                    <h4>Machine Learning : Object Classification</h4>
+                    <ol>
+                        <li>Data Accquisition</li>
+                        <li>Data Exploration</li>
+                        <li>Modeling</li>
+                        <li>Evaluation</li>
+                        <li>UI/UX</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TEAM -->
+
+
+    <!-- FOOTER -->
+    <footer class="text-center p-3 text-white">
+        <p class="fs-5">&copy; 2023 Kelompok 3 - Vision - Orbit Future Academy : AI 4 Jobs</p>
+    </footer>
+    <!-- FOOTER -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
