@@ -12,7 +12,7 @@ Bertujuan untuk membantu penguji dalam memeriksa kecacatan produk coran sebelum 
 * Klasifikasi Gambar
 
 ### Tambahan
-Model AI, hasil pelatihan model, dan kode program bisa kunjungi link berikut [https://tinyurl.com/ProyekAkhir-OFA5] 
+Informasi lebih lanjut untuk Model AI dan hasil pelatihan model bisa kunjungi link berikut [https://tinyurl.com/ProyekAkhir-OFA5] 
 
 ## Kelompok 3 - Vision
 * Aisyah Sekar Tri Wardani
